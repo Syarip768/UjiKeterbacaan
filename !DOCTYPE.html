@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect Acak Google Form</title>
+    <script>
+        window.onload = function() {
+            var links = [
+                "https://forms.gle/gBVLYt4j2UJi9vMz9",
+                "https://forms.gle/PjUPRusjnESM3HEJ7",
+                "https://forms.gle/AXq2GakDjCM7iPat8",
+                "https://forms.gle/hJBscp7bA6NasULb6"
+            ];
+            var randomLink = links[Math.floor(Math.random() * links.length)];
+            window.location.href = randomLink;
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Mohon tunggu, Anda sedang diarahkan ke formulir...</h2>
+    <p>Jika tidak diarahkan dalam 5 detik, <a id="manualLink" href="#">klik di sini</a>.</p>
+
+    <script>
+        // Update manual link untuk jaga-jaga
+        var links = [
+           "https://forms.gle/gBVLYt4j2UJi9vMz9",
+           "https://forms.gle/PjUPRusjnESM3HEJ7",
+           "https://forms.gle/AXq2GakDjCM7iPat8",
+           "https://forms.gle/hJBscp7bA6NasULb6"
+        ];
+        var randomLink = links[Math.floor(Math.random() * links.length)];
+        document.getElementById("manualLink").href = randomLink;
+    </script>
+</body>
+</html>
